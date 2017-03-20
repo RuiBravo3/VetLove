@@ -1,12 +1,13 @@
 package application;
 
 import controller.GestorCliente;
+import misc.Mdata;
 
 public class App {
 
 	public static void main(String[] args) {
-		new GestorCliente();
-
+		GestorCliente gc=new GestorCliente();
+		gc.addClient(Mdata.cl);
 	}
 
 }

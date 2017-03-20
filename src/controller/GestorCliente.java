@@ -22,6 +22,15 @@ public class GestorCliente {
 			ARCliente.add(c);
 		}
 		
+
+		public void addClient(Cliente c) {
+			int novoId = ARCliente.size();
+			
+			c.setId(novoId);
+			
+			ARCliente.add(c);
+	}
+		
 		public Cliente getCliente(int id) {
 			/*FOREACH: para cada cliente, sob a variavel c, dentro da colecao arCliente, faz */
 			for (Cliente c: ARCliente) {
@@ -31,6 +40,7 @@ public class GestorCliente {
 			
 			return null;
 		}
+	
 		
 		public double getGastoVacinas(Cliente c) {
 			/* Alternativa 
