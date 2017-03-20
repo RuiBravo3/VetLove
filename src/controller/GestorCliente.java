@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import model.Animal;
 import model.Cliente;
+import model.Vacina;
 
 public class GestorCliente {
 		ArrayList<Cliente> ARCliente;
@@ -49,7 +50,7 @@ public class GestorCliente {
 					totalVacAnimais+=totalVacinaAnimal;
 				
 			}
-				return totalClientes;
+				return totalVacAnimais;
 		}
 		
 }
